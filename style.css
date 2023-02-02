@@ -1,0 +1,261 @@
+html {
+  content: '';
+  background: hsla(225, 100%, 94%,
+     0.5) url('../images/pattern-background-desktop.svg');
+  background-blend-mode: overlay;
+  background-repeat: repeat-x;
+  /* background-size:contain; */
+  background-position:top;
+  background-attachment: fixed;
+}
+
+
+.main-container{
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 440px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Overpass', sans-serif;
+  background-color: white;
+  border-radius: 20px;
+}
+
+
+.hero-img img {
+  width:100%;
+  max-width:450px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.order-summary {
+  width: 70%;
+  max-width: 300px;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.order-summary p {
+  color: hsl(224, 23%, 55%) !important;
+}
+
+.pricing {
+  background-color: hsl(225, 100%, 94%, 0.2);
+  padding: 10px 5px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items:center;
+  gap: 80px;
+}
+
+
+
+.music {
+  display:flex;
+  align-items: center;
+  gap:20px;
+  padding-left:15px;
+}
+
+/* .annual_plan {
+
+} */
+
+.annual_plan h4 {
+  font-weight: 900;
+  margin-bottom:5px;
+}
+
+.annual_plan p {
+  margin-top: 5px;
+  color: hsl(224, 23%, 55%);
+}
+
+.change {
+  padding-right: 15px;
+}
+
+.change button {
+  border:none;
+  background-color:inherit;
+  text-decoration: underline;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+.change button:hover {
+  cursor: pointer;
+  color: hsl(245, 75%, 52%, 0.6);
+  text-decoration: none;
+}
+
+.payment {
+  display:flex;
+  flex-direction: column;
+
+}
+
+.payment button {
+  /* margin: 5px; */
+  border: none;
+  padding: 15px 95px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
+
+.proceed_button {
+  color: hsl(225, 100%, 94%);
+  background-color: hsl(245, 75%, 52%);
+  margin-bottom: 25px !important;
+  box-shadow: 0px 20px 10px 2px hsl(224, 23%, 55%, 0.25);
+}
+
+.cancel_button {
+  background-color: transparent;
+  color: hsl(224, 23%, 55%, 0.8);
+  margin-bottom: 30px;
+}
+
+
+.proceed_button:hover {
+  /* margin: 5px; */
+  cursor: pointer;
+  background-color: hsl(245, 75%, 52%, 0.6);
+}
+
+.cancel_button:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
+
+/*
+footer attribution - for later consideration
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*/
+
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+
+  .main-container{
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    max-width: 400px;
+    height: 70%;
+    max-height: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Overpass', sans-serif;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .order-summary {
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    padding-top: 10px;
+
+  }
+
+  .order-summary h1 {
+    font-size: 1.3rem;
+    font-weight: 900;
+  }
+
+  .order-summary p {
+    line-height: 1.5;
+    font-size: 0.9rem;
+  }
+
+  .pricing {
+    background-color: hsl(225, 100%, 94%, 0.2);
+    padding: 5px 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .music {
+    display:flex;
+    align-items: center;
+    gap:20px;
+    padding-left:10px;
+  }
+
+  .annual_plan {
+
+  }
+
+  .annual_plan h4 {
+    font-weight: 900;
+    margin-bottom:5px;
+  }
+
+  .annual_plan p {
+    margin-top: 5px;
+    color: hsl(224, 23%, 55%);
+  }
+
+  .change {
+    padding-right: 10px;
+  }
+
+
+  .payment button {
+    /* margin: 5px; */
+    border: none;
+    padding: 15px 75px;
+    border-radius: 10px;
+    font-weight: 900;
+  }
+
+
+  .proceed_button {
+    color: hsl(225, 100%, 94%);
+    background-color: hsl(245, 75%, 52%);
+    margin-bottom: 5px !important;
+    box-shadow: 0px 10px 10px 2px hsl(224, 23%, 55%, 0.25);
+  }
+
+  .cancel_button {
+    background-color: transparent;
+    color: hsl(224, 23%, 55%, 0.8);
+    margin-bottom: 30px;
+  }
+
+
+  .proceed_button:hover {
+    /* margin: 5px; */
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%, 0.6);
+  }
+
+  .cancel_button:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+  }
+
+}
