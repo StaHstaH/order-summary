@@ -147,7 +147,7 @@ footer attribution - for later consideration
 
 */
 
-@media screen and (min-width: 375px) and (max-width: 1440px) {
+/* @media screen and (max-width: 650px) {
 
   .main-container{
     display: flex;
@@ -225,7 +225,7 @@ footer attribution - for later consideration
 
 
   .payment button {
-    /* margin: 5px; */
+    margin: 5px;
     border: none;
     padding: 15px 75px;
     border-radius: 10px;
@@ -248,7 +248,7 @@ footer attribution - for later consideration
 
 
   .proceed_button:hover {
-    /* margin: 5px; */
+    margin: 5px;
     cursor: pointer;
     background-color: hsl(245, 75%, 52%, 0.6);
   }
@@ -258,4 +258,4 @@ footer attribution - for later consideration
     color: hsl(223, 47%, 23%);
   }
 
-}
+} */
