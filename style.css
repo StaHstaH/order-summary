@@ -1,7 +1,6 @@
 html {
   content: '';
-  background: hsla(225, 100%, 94%,
-     0.5) url('../images/pattern-background-desktop.svg');
+  background: hsla(225,100%,94%,0.5) url('../images/pattern-background-desktop.svg');
   background-blend-mode: overlay;
   background-repeat: repeat-x;
   /* background-size:contain; */
@@ -106,7 +105,6 @@ html {
 }
 
 .payment button {
-  /* margin: 5px; */
   border: none;
   padding: 15px 95px;
   border-radius: 10px;
@@ -129,7 +127,6 @@ html {
 
 
 .proceed_button:hover {
-  /* margin: 5px; */
   cursor: pointer;
   background-color: hsl(245, 75%, 52%, 0.6);
 }
@@ -147,115 +144,40 @@ footer attribution - for later consideration
 
 */
 
-@media screen and (min-width: 375px) and (max-width: 1440px) {
-
-  .main-container{
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    align-items: center;
-    width: 85%;
-    max-width: 400px;
-    height: 70%;
-    max-height: 600px;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Overpass', sans-serif;
-    background-color: white;
-    border-radius: 20px;
-  }
-
-  .order-summary {
-    width: 90%;
-    max-width: 300px;
-    text-align: center;
-    padding-top: 10px;
-
-  }
-
-  .order-summary h1 {
-    font-size: 1.3rem;
-    font-weight: 900;
-  }
-
-  .order-summary p {
-    line-height: 1.5;
-    font-size: 0.9rem;
-  }
-
+@media screen  and (max-width: 590px) {
   .pricing {
     background-color: hsl(225, 100%, 94%, 0.2);
-    padding: 5px 0;
+    padding: 10px 5px;
     margin-bottom: 30px;
     border-radius: 10px;
     display: flex;
     align-items:center;
-    gap: 20px;
-    width: 90%;
+    gap: 40px;
   }
-
-  .music {
-    display:flex;
-    align-items: center;
-    gap:20px;
-    padding-left:10px;
-  }
-
-  .annual_plan {
-
-  }
-
-  .annual_plan h4 {
-    font-weight: 900;
-    margin-bottom:5px;
-  }
-
-  .annual_plan p {
-    margin-top: 5px;
-    color: hsl(224, 23%, 55%);
-  }
-
-  .change {
-    padding-right: 10px;
-  }
-
 
   .payment button {
-    /* margin: 5px; */
     border: none;
     padding: 15px 75px;
     border-radius: 10px;
     font-weight: 900;
   }
+}
 
-
-  .proceed_button {
-    color: hsl(225, 100%, 94%);
-    background-color: hsl(245, 75%, 52%);
-    margin-bottom: 5px !important;
-    box-shadow: 0px 10px 10px 2px hsl(224, 23%, 55%, 0.25);
-  }
-
-  .cancel_button {
-    background-color: transparent;
-    color: hsl(224, 23%, 55%, 0.8);
+@media screen  and (max-width: 524px) {
+  .pricing {
+    background-color: hsl(225, 100%, 94%, 0.2);
+    padding: 10px 5px;
     margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+    gap: 40px;
   }
 
-
-  .proceed_button:hover {
-    /* margin: 5px; */
-    cursor: pointer;
-    background-color: hsl(245, 75%, 52%, 0.6);
+  .payment button {
+    border: none;
+    padding: 15px 75px;
+    border-radius: 10px;
+    font-weight: 900;
   }
-
-  .cancel_button:hover {
-    cursor: pointer;
-    color: hsl(223, 47%, 23%);
-  }
-
 }
