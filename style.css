@@ -144,7 +144,7 @@ footer attribution - for later consideration
 
 */
 
-@media screen  and (max-width: 590px) {
+@media screen and (min-width:375px) and (max-width: 630px) {
   .pricing {
     background-color: hsl(225, 100%, 94%, 0.2);
     padding: 10px 5px;
@@ -163,7 +163,7 @@ footer attribution - for later consideration
   }
 }
 
-@media screen  and (max-width: 524px) {
+/* @media screen  and (max-width: 524px) {
   .pricing {
     background-color: hsl(225, 100%, 94%, 0.2);
     padding: 10px 5px;
@@ -179,5 +179,10 @@ footer attribution - for later consideration
     padding: 15px 75px;
     border-radius: 10px;
     font-weight: 900;
+  }
+} */
+
+@media screen and (max-width: 375px) {
+  html {display:none;
   }
 }
